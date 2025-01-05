@@ -469,6 +469,20 @@ export const ACTIVITY_BAR_FOREGROUND = registerColor('activityBar.foreground', {
 	hcLight: editorForeground
 }, localize('activityBarForeground', "Activity bar item foreground color when it is active. The activity bar is showing on the far left or right and allows to switch between views of the side bar."));
 
+export const ACTIVITY_BAR_HOVER_BACKGROUND = registerColor('activityBar.hoverBackground', {
+	dark: '#333333',
+	light: '#2C2C2C',
+	hcDark: '#000000',
+	hcLight: '#FFFFFF'
+}, localize('activityBarHoverBackground', "Activity bar background color on hover. The activity bar is showing on the far left or right and allows to switch between views of the side bar."));
+
+export const ACTIVITY_BAR_HOVER_FOREGROUND = registerColor('activityBar.hoverForeground', {
+	dark: Color.white,
+	light: Color.white,
+	hcDark: Color.white,
+	hcLight: editorForeground
+}, localize('activityBarHoverForeground', "Activity bar item foreground color on hover. The activity bar is showing on the far left or right and allows to switch between views of the side bar."));
+
 export const ACTIVITY_BAR_INACTIVE_FOREGROUND = registerColor('activityBar.inactiveForeground', {
 	dark: transparent(ACTIVITY_BAR_FOREGROUND, 0.4),
 	light: transparent(ACTIVITY_BAR_FOREGROUND, 0.4),
@@ -522,6 +536,13 @@ export const ACTIVITY_BAR_TOP_FOREGROUND = registerColor('activityBarTop.foregro
 	hcLight: editorForeground
 }, localize('activityBarTop', "Active foreground color of the item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar."));
 
+export const ACTIVITY_BAR_TOP_HOVER_FOREGROUND = registerColor('activityBarTop.hoverForeground', {
+	dark: '#E7E7E7',
+	light: '#424242',
+	hcDark: Color.white,
+	hcLight: editorForeground
+}, localize('activityBarTopHoverForeground', "Foreground color of the item on hover in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar."));
+
 export const ACTIVITY_BAR_TOP_ACTIVE_BORDER = registerColor('activityBarTop.activeBorder', {
 	dark: ACTIVITY_BAR_TOP_FOREGROUND,
 	light: ACTIVITY_BAR_TOP_FOREGROUND,
@@ -542,6 +563,7 @@ export const ACTIVITY_BAR_TOP_DRAG_AND_DROP_BORDER = registerColor('activityBarT
 
 export const ACTIVITY_BAR_TOP_BACKGROUND = registerColor('activityBarTop.background', null, localize('activityBarTopBackground', "Background color of the activity bar when set to top / bottom."));
 
+export const ACTIVITY_BAR_TOP_HOVER_BACKGROUND = registerColor('activityBarTop.hoverBackground', null, localize('activityBarTopHoverBackground', "Background color of the activity bar on hover when set to top / bottom."));
 
 // < --- Profiles --- >
 
